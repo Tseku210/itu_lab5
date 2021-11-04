@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var name = window.prompt("нэр чинь хэн бэ?"); // name = 'Khand' name = "Naran"
+            var palindrome = ""; // palindrome = "dnahk" palindrome = "naran"
+            for (var i = name.length - 1; i >= 0; i--){ // i = -1
+                palindrome += name[i].toLowerCase(); // i = 4 name[3] = "n" tolowercase
+            }
+            if (name.toLowerCase() == palindrome){ // name.toLowerCase() = "naran" == "naran" = true khand == dnahk = false
+                alert("Palindrom мөн");
+            } else {
+                alert("Palindrom биш");
+            };
+        </script>
+    </body>
+</html>

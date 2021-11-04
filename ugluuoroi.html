@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web</title>
+        <meta charset="utf-8">
+        <style>
+            html {
+                height: 100%;
+                width: 100%;
+            }
+            .green {
+                height: 200px;
+                width: 200px;
+                position: aboslute;
+                top: 0;
+                bottom: auto;
+                right: auto;
+                left: 0;
+                background-color: green;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+            .red {
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                right: 0;
+                left: auto;
+                top: auto;
+                bottom: 0;
+                background-color: red;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <script>
+            var date = new Date();
+            var hour = date.getHours();
+            var block = document.createElement("div");
+
+            if (hour < 18) {
+                block.classList.add("green");
+            } else {
+                block.classList.add("red");
+            }
+            document.body.appendChild(block);
+        </script>
+    </body>
+</html>

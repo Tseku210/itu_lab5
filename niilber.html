@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var num = window.prompt("Too oruul");
+            var sum = 0;
+            while (num > 0){
+                sum += num % 10; 
+                num = (num - num % 10) / 10; 
+            }
+            alert(sum);
+        </script>
+    </body>
+</html>

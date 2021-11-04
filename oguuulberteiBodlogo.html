@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var zai = window.prompt("Zai oruul");
+            var tsag = (zai / 7).toFixed(2);
+            var minute = (tsag * 60).toFixed(2);
+            var seconds = (minute - Math.floor(minute)) * 60;
+            alert(Math.floor(minute) + " minute " + seconds.toFixed(2) % 100 + " seconds");
+        </script>
+    </body>
+</html>
