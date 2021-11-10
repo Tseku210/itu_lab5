@@ -6,13 +6,18 @@
     </head>
     <body>
         <script>
-            var num = window.prompt("Too oruul");
+            var numString = String(window.prompt("Too oruul"));
+            var num = parseInt(numString)
             var sum = 0;
-            while (num > 0){
-                sum += num % 10; 
-                num = (num - num % 10) / 10; 
+            // while (parseInt(numString) > 0){
+            //     sum += parseInt(numString) % 10; 
+            //     numString = parseInt((numString - numString % 10) / 10); 
+            // }
+            // alert(sum);
+            for(var i = 0; i < numString.length; i++){
+                sum += parseInt(numString[i])
             }
-            alert(sum);
+            alert(sum)
         </script>
     </body>
 </html>

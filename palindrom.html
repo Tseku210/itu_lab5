@@ -12,7 +12,11 @@
                 palindrome += name[i].toLowerCase(); // i = 4 name[3] = "n" tolowercase
             }
             if (name.toLowerCase() == palindrome){ // name.toLowerCase() = "naran" == "naran" = true khand == dnahk = false
-                alert("Palindrom мөн");
+                if (name.length == 1){
+                    alert("Palindrom биш");
+                } else {
+                    alert("Palindrom мөн");
+                }
             } else {
                 alert("Palindrom биш");
             };

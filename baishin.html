@@ -48,7 +48,15 @@
                     }
                     i++;
             }
-            alert(`orts: ${orts}, davhar: ${davhar}, haalga: ${haalga}`);
+            if (toot == 0){
+                alert("¯\\_( ͡❛ ͜ʖ ͡❛)_/¯");
+            } else if (toot > 108){
+                alert("¯\\_( ❛︠ ͜ʖ ︡❛)_/¯");
+            } else if (toot < 0){
+                alert("(ㆆ_ㆆ)");
+            } else {
+                alert(`orts: ${orts}, davhar: ${davhar}, haalga: ${haalga}`);
+            }
         </script>
     </body>
 </html>
